@@ -36,7 +36,7 @@ function check(y,x,fig) {
       sum += 1;
     }
     if (sum == 3) {
-      alert('congratulations, ' + fig + ' remember!')
+      alert('congratulations, ' + fig + ' won!')
       restart();
       return true;
     }
@@ -57,7 +57,7 @@ function check(y,x,fig) {
 
   //diagonal\
   if ((area[0][0] == fig) && (area[1][1] == fig) && (area[2][2] == fig)) {
-    alert('congratulations, ' + fig + ' remember!')
+    alert('congratulations, ' + fig + ' won!')
     restart();
     return true;
   }
