@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/indx.js"></script>
+    <title>game-x-o</title>
+</head>
+<body>
+    <div class="game">
+        <div class="info oposition" id="info">beginning of the game</div> 
+        <div class="winers oposition_second" id="winers">who's the winner?</div> 
+        <div class="bloks">
+            <input type="button" class="cnock one" value="!" id="Z_1_1" onclick="(go(this))"></input>    <input type="button" class="cnock two" value="!" id="Z_1_2" onclick="(go(this))"></input>   <input type="button" class="cnock three" value="!" id="Z_1_3" onclick="(go(this))"></input> <br/>
+            <input type="button" class="cnock four" value="!" id="Z_2_1" onclick="(go(this))"></input>    <input type="button" class="cnock five" value="!" id="Z_2_2" onclick="(go(this))"></input>   <input type="button" class="cnock six" value="!" id="Z_2_3" onclick="(go(this))"></input> <br/>
+            <input type="button" class="cnock seven" value="!" id="Z_3_1" onclick="(go(this))"></input>    <input type="button" class="cnock eight" value="!" id="Z_3_2" onclick="(go(this))"></input>   <input type="button" class="cnock nine" value="!" id="Z_3_3" onclick="(go(this))"></input> <br/>
+        </div>
+        <script> restart(); </script>
+        <div class="res">
+            <input type="button" class="restart" onclick="restart();" value="new game"></input>
+        </div>
+    </div>
+</body>
+</html>

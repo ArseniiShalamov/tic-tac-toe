@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OpenSens;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSens;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: bolt;
+    font-style: normal;
+}
+
+body {
+    font-family: "OpenSans", "Arial", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .game {
+        background-image: url(../img/17022.jpg); 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    .info {
+        width: 100%;
+        font-size: 22px;
+        margin-top: 10vh;
+        color: #cacaca;
+        background-color: rgba(123, 123, 123, 0.6);
+    }
+
+    .winers {
+        width: 100%;
+        font-size: 18px;
+        color: #cacaca;
+        background-color: rgba(123, 123, 123, 0.6);
+    }
+
+    .bloks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 315px;
+    }
+
+    .cnock {
+        width: 100px;
+        background: radial-gradient(ellipse farthest-corner, #3d3d3d 0%, rgb(213, 213, 213) 250%);
+        opacity: 0.93;
+        color: #cacaca;
+        font-size: 25px;
+        margin: 2.5px 2.5px;
+        
+    }
+
+    .restart {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 45px;
+        border-radius: 12px;
+        background: radial-gradient(ellipse farthest-corner, #5b5b5b 0%, #d5d5d5 160%);
+        opacity: 0.71;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+    .game {
+        background-image: url(../img/17022.jpg);
+        padding-top: 20vh;
+    }
+
+    .info {
+        display: flex;
+        font-size: 25px;
+        color: #cacaca;
+        width: 50%;
+    }
+      
+    .winers {
+        font-size: 20px;
+        color: #cacaca;
+        width: 50%;
+        margin-top: 6px;
+    }
+    
+    .bloks {
+        width: 100%;
+        position: relative;
+        top: 2vh;
+        left: 0;
+        text-align: center;
+    }
+    
+    .cnock {
+        background: radial-gradient(ellipse farthest-corner, #3d3d3d 0%, rgb(213, 213, 213) 250%);
+        opacity: 0.9;
+        color: #cacaca;
+        font-size: 25px;
+        margin: 2px 0;
+    }
+    
+    .res {
+        margin-top: 3vh;
+    }
+    
+    .restart {
+        background: radial-gradient(ellipse farthest-corner, #5b5b5b 0%, #d5d5d5 160%);;
+        opacity: 0.8;
+        font-size: 16px;
+        color: #ebebeb;
+    }
+}
+
+@media (min-width: 1300px) {
+    .game {
+        background-image: url(../img/166690-battlefield_2042-e3_2021-xbox_serii_x_i_serii_s-xbox_one-playstation_4-1920x1080.jpg);
+        background-position: center;
+    }
+
+    .info {
+        display: flex;
+        font-size: 35px;
+        color: #fa0000;
+        background-image: linear-gradient(60deg, #000 20%, #00ccc9 40%, #009997 100%);
+        opacity: 0.83;
+        width: 50%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 14%;
+    }
+      
+    .winers {
+        font-size: 35px;
+        color: #00fad1;
+        background-image: linear-gradient(140deg, #009997 20%, #f80015 40%, #002221 100%);
+        opacity: 0.83;
+        width: 50%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 14%;
+    }
+    
+    .bloks {
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0.5%;
+        text-align: center;
+    }
+    
+    .cnock {
+        font-size: 25px;
+        margin: 2px 0;
+    }
+
+    .one {
+        background: radial-gradient(ellipse farthest-corner, #004443 0%, rgba(0, 17, 17, 0.5) 100%);
+        color: #009997;
+    }
+
+    .two {
+        background: radial-gradient(ellipse farthest-corner, #003332 0%, rgba(0, 34, 30, 0.7) 90%);
+        color: #009997;
+    }
+
+    .three {
+        background: radial-gradient(ellipse farthest-corner, #440000 0%, rgba(248, 0, 21, 0.2) 200%);
+        color: #fa0015;
+    }
+
+    .four {
+        background: radial-gradient(ellipse farthest-corner, #004443 0%, rgba(0, 17, 17, 0.5) 110%);
+        color: #009997;
+    }
+
+    .five {
+        background: radial-gradient(ellipse farthest-corner, #003332 0%, rgba(0, 17, 17, 0.7) 100%);
+        color: #009997;
+    }
+
+    .six {
+        background: radial-gradient(ellipse farthest-corner, #aa0000 0%, rgba(0, 0, 0, 0.7) 120%);
+        color: #000;
+    }
+
+    .seven {
+        background: radial-gradient(ellipse farthest-corner, #003332 0%, rgba(0, 17, 17, 0.7) 110%);
+        color: #009997;
+    }
+
+    .eight {
+        background: radial-gradient(ellipse farthest-corner, #aa0000 0%, rgba(0, 0, 0, 0.7) 140%);
+        color: #000;
+    }
+
+    .nine {
+        background: radial-gradient(ellipse farthest-corner, #440000 0%, rgba(248, 0, 21, 0.2) 200%);
+        color: #fa0015;
+    }
+    
+    .restart {
+        background: radial-gradient(ellipse farthest-corner, #440000 0%, rgba(248, 0, 21, 0.2) 200%);
+        font-size: 16px;
+        color: rgba(136,255,253, 0.8);
+    }
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+    height: 100vh;
+    align-items: flex-start; 
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.winers {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.cnock {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.res {
+    width: 100%;
+}
+
+.restart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 45px;
+    border-radius: 12px;
+}
