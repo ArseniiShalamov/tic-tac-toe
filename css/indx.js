@@ -49,7 +49,7 @@ function check(y,x,fig) {
       sum += 1;
     }
     if (sum == 3) {
-      alert('congratulations, ' + fig + ' remember!')
+      alert('congratulations, ' + fig + ' won!')
       restart();
       return true;
     }
