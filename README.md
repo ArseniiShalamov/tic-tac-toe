@@ -2,7 +2,7 @@
 
 Browser-based Tic-Tac-Toe (vanilla JS + CSS).
 
-**Live demo:** <PASTE_YOUR_PAGES_URL_HERE>
+**Live demo:** [<PASTE_YOUR_PAGES_URL_HERE>](https://arseniishalamov.github.io/tic-tac-toe/)
 
 ## How to run
 Just open `index.html` in your browser.
